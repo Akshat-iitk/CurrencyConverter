@@ -36,7 +36,7 @@ function CurrBox({
       <div className="w-1/2 flex flex-wrap justify-end text-right">
         <p className="text-black/50 mb-2 w-full font-semibold">Currency Type</p>
         <select
-          className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
+          className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none hover:font-semibold duration-200"
           value={selectCurrency}
           onChange={(event) =>
             onCurrencyChange && onCurrencyChange(event.target.value)
@@ -45,7 +45,7 @@ function CurrBox({
         >
           {currencyOptions.map((currency) => {
             return (
-              <option key={currency} value={currency}>
+              <option className="hover:bg-blue-500 duration-200" key={currency} value={currency}>
                 {/* remember to use key if you are looping jsx element */}
                 {currency}
               </option>
