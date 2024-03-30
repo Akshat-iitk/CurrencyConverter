@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body{
-    background-color: gray;
+body {
+    transform: scale(1.2);
+    overflow : hidden ;
 }

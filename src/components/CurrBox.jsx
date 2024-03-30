@@ -27,6 +27,7 @@ function CurrBox({
           placeholder="Amount"
           disabled={amountDisable}
           value={amount}
+          
           onChange={(e) =>
             onAmountChange && onAmountChange(Number(e.target.value))
           }
